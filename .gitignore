@@ -1,0 +1,65 @@
+# Unreal Engine project .gitignore
+# Goal: keep reproducible source files (C++, Blueprints/assets, config) in Git,
+# while excluding generated, cache, log, and build output files.
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+*.bak
+*.orig
+
+# IDE files
+.vscode/
+.vs/
+.idea/
+*.VC.db
+*.VC.opendb
+
+# Unreal generated/build output (large or reproducible from source)
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# Plugin generated/build output
+Plugins/*/Binaries/
+Plugins/*/DerivedDataCache/
+Plugins/*/Intermediate/
+Plugins/*/Saved/
+
+# Build artifacts / packages
+*.pdb
+*.obj
+*.lib
+*.dll
+*.exe
+*.app
+*.dylib
+*.so
+*.pak
+*.ucas
+*.utoc
+*.zip
+
+# Python cache (sometimes created by UE tools)
+__pycache__/
+*.pyc
+
+# Keep all source-of-truth project files tracked
+# (C++, Blueprints/assets/maps, config, uproject)
+!Source/**
+!Config/**
+!Content/**
+!Plugins/**/Source/**
+!Plugins/**/Content/**
+!*.uproject
+!*.uplugin
+
+# Explicitly keep UE assets for reproducibility
+!Content/**/*.uasset
+!Content/**/*.umap
+!Plugins/**/Content/**/*.uasset
+!Plugins/**/Content/**/*.umap
