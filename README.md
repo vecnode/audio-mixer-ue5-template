@@ -1,1 +1,6 @@
-# Audio Template Project for Unreal Engine 5.7
+# UE5 Audio Mixer Template
+
+- Audio INPUT
+- Audio OUTPUT
+- Sliders for SOUND_BLUEPRINT (MetaSounds)
+

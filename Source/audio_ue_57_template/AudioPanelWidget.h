@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Styling/SlateTypes.h"
 #include "Widgets/SCompoundWidget.h"
 
 class STextBlock;
@@ -21,4 +22,6 @@ public:
 
 private:
 	TSharedPtr<STextBlock> ReportTextBlock;
+	TArray<float> TrackSliderValues;
+	TArray<FSliderStyle> TrackSliderStyles;
 };

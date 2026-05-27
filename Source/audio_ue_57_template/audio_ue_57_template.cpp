@@ -55,7 +55,7 @@ private:
 	TSharedPtr<SWidget> RootViewportWidget;
 	TSharedPtr<SAudioPanelWidget> AudioPanelWidget;
 
-	void ConfigurePanelInput(UWorld* InWorld)
+	void ConfigurePanelInput(UWorld* InWorld, bool bApplyInputMode)
 	{
 		if (!GEngine || !InWorld || !AudioPanelWidget.IsValid())
 		{
@@ -72,17 +72,20 @@ private:
 		PlayerController->bEnableClickEvents = true;
 		PlayerController->bEnableMouseOverEvents = true;
 
-		if (GEngine->GameViewport)
+		if (bApplyInputMode && GEngine->GameViewport)
 		{
-			GEngine->GameViewport->SetMouseCaptureMode(EMouseCaptureMode::NoCapture);
+			GEngine->GameViewport->SetMouseCaptureMode(EMouseCaptureMode::CaptureDuringMouseDown);
 			GEngine->GameViewport->SetMouseLockMode(EMouseLockMode::DoNotLock);
 		}
 
-		FInputModeGameAndUI InputMode;
-		InputMode.SetWidgetToFocus(AudioPanelWidget);
-		InputMode.SetLockMouseToViewportBehavior(EMouseLockMode::DoNotLock);
-		InputMode.SetHideCursorDuringCapture(false);
-		PlayerController->SetInputMode(InputMode);
+		if (bApplyInputMode)
+		{
+			FInputModeGameAndUI InputMode;
+			InputMode.SetWidgetToFocus(AudioPanelWidget);
+			InputMode.SetLockMouseToViewportBehavior(EMouseLockMode::DoNotLock);
+			InputMode.SetHideCursorDuringCapture(false);
+			PlayerController->SetInputMode(InputMode);
+		}
 	}
 
 	void ShowAudioIOReportPanel(const FString& ReportText, UWorld* InWorld)
@@ -113,10 +116,10 @@ private:
 
 		GEngine->GameViewport->AddViewportWidgetContent(RootViewportWidget.ToSharedRef(), 0);
 		UWorld* TargetWorld = InWorld ? InWorld : GEngine->GameViewport->GetWorld();
-		ConfigurePanelInput(TargetWorld);
+		ConfigurePanelInput(TargetWorld, true);
 
 		InputFixWorld = TargetWorld;
-		RemainingInputFixFrames = 180;
+		RemainingInputFixFrames = 120;
 	}
 
 	void HandlePostEngineInit()
@@ -162,7 +165,7 @@ private:
 			return;
 		}
 
-		ConfigurePanelInput(InWorld);
+		ConfigurePanelInput(InWorld, true);
 		--RemainingInputFixFrames;
 	}
 
