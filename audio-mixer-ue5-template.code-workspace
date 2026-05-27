@@ -1,7 +1,7 @@
 {
 	"folders": [
 		{
-			"name": "audio_ue_57_template",
+			"name": "audio-mixer-ue5-template",
 			"path": "."
 		},
 		{
@@ -37,7 +37,7 @@
 					"audio_ue_57_template",
 					"Win64",
 					"Debug",
-					"${workspaceFolder:audio_ue_57_template}\\audio_ue_57_template.uproject",
+					"${workspaceFolder:audio-mixer-ue5-template}\\audio-mixer-ue5-template.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -54,7 +54,7 @@
 					"audio_ue_57_template",
 					"Win64",
 					"Debug",
-					"${workspaceFolder:audio_ue_57_template}\\audio_ue_57_template.uproject",
+					"${workspaceFolder:audio-mixer-ue5-template}\\audio-mixer-ue5-template.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -74,7 +74,7 @@
 					"audio_ue_57_template",
 					"Win64",
 					"Debug",
-					"${workspaceFolder:audio_ue_57_template}\\audio_ue_57_template.uproject",
+					"${workspaceFolder:audio-mixer-ue5-template}\\audio-mixer-ue5-template.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -91,7 +91,7 @@
 					"audio_ue_57_template",
 					"Win64",
 					"DebugGame",
-					"${workspaceFolder:audio_ue_57_template}\\audio_ue_57_template.uproject",
+					"${workspaceFolder:audio-mixer-ue5-template}\\audio-mixer-ue5-template.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -108,7 +108,7 @@
 					"audio_ue_57_template",
 					"Win64",
 					"DebugGame",
-					"${workspaceFolder:audio_ue_57_template}\\audio_ue_57_template.uproject",
+					"${workspaceFolder:audio-mixer-ue5-template}\\audio-mixer-ue5-template.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -128,7 +128,7 @@
 					"audio_ue_57_template",
 					"Win64",
 					"DebugGame",
-					"${workspaceFolder:audio_ue_57_template}\\audio_ue_57_template.uproject",
+					"${workspaceFolder:audio-mixer-ue5-template}\\audio-mixer-ue5-template.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -145,7 +145,7 @@
 					"audio_ue_57_template",
 					"Win64",
 					"Development",
-					"${workspaceFolder:audio_ue_57_template}\\audio_ue_57_template.uproject",
+					"${workspaceFolder:audio-mixer-ue5-template}\\audio-mixer-ue5-template.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -162,7 +162,7 @@
 					"audio_ue_57_template",
 					"Win64",
 					"Development",
-					"${workspaceFolder:audio_ue_57_template}\\audio_ue_57_template.uproject",
+					"${workspaceFolder:audio-mixer-ue5-template}\\audio-mixer-ue5-template.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -182,7 +182,7 @@
 					"audio_ue_57_template",
 					"Win64",
 					"Development",
-					"${workspaceFolder:audio_ue_57_template}\\audio_ue_57_template.uproject",
+					"${workspaceFolder:audio-mixer-ue5-template}\\audio-mixer-ue5-template.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -199,7 +199,7 @@
 					"audio_ue_57_template",
 					"Win64",
 					"Test",
-					"${workspaceFolder:audio_ue_57_template}\\audio_ue_57_template.uproject",
+					"${workspaceFolder:audio-mixer-ue5-template}\\audio-mixer-ue5-template.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -216,7 +216,7 @@
 					"audio_ue_57_template",
 					"Win64",
 					"Test",
-					"${workspaceFolder:audio_ue_57_template}\\audio_ue_57_template.uproject",
+					"${workspaceFolder:audio-mixer-ue5-template}\\audio-mixer-ue5-template.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -236,7 +236,7 @@
 					"audio_ue_57_template",
 					"Win64",
 					"Test",
-					"${workspaceFolder:audio_ue_57_template}\\audio_ue_57_template.uproject",
+					"${workspaceFolder:audio-mixer-ue5-template}\\audio-mixer-ue5-template.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -253,7 +253,7 @@
 					"audio_ue_57_template",
 					"Win64",
 					"Shipping",
-					"${workspaceFolder:audio_ue_57_template}\\audio_ue_57_template.uproject",
+					"${workspaceFolder:audio-mixer-ue5-template}\\audio-mixer-ue5-template.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -270,7 +270,7 @@
 					"audio_ue_57_template",
 					"Win64",
 					"Shipping",
-					"${workspaceFolder:audio_ue_57_template}\\audio_ue_57_template.uproject",
+					"${workspaceFolder:audio-mixer-ue5-template}\\audio-mixer-ue5-template.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -290,7 +290,7 @@
 					"audio_ue_57_template",
 					"Win64",
 					"Shipping",
-					"${workspaceFolder:audio_ue_57_template}\\audio_ue_57_template.uproject",
+					"${workspaceFolder:audio-mixer-ue5-template}\\audio-mixer-ue5-template.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -307,7 +307,7 @@
 					"audio_ue_57_templateEditor",
 					"Win64",
 					"Debug",
-					"${workspaceFolder:audio_ue_57_template}\\audio_ue_57_template.uproject",
+					"${workspaceFolder:audio-mixer-ue5-template}\\audio-mixer-ue5-template.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -324,7 +324,7 @@
 					"audio_ue_57_templateEditor",
 					"Win64",
 					"Debug",
-					"${workspaceFolder:audio_ue_57_template}\\audio_ue_57_template.uproject",
+					"${workspaceFolder:audio-mixer-ue5-template}\\audio-mixer-ue5-template.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
