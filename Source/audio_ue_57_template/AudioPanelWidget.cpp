@@ -13,8 +13,11 @@
 
 void SAudioPanelWidget::Construct(const FArguments& InArgs)
 {
+	// Centralized sizing/count constants keep the mixer layout consistent and easy to tune.
 	constexpr int32 NumMixerTracks = 5;
 	constexpr float DefaultSliderValue = 0.8f;
+	OnPlayTrackRequested = InArgs._OnPlayTrackRequested;
+	OnTrackVolumeChanged = InArgs._OnTrackVolumeChanged;
 
 	TrackSliderValues.Init(DefaultSliderValue, NumMixerTracks);
 	TrackSliderStyles.Init(FCoreStyle::Get().GetWidgetStyle<FSliderStyle>("Slider"), NumMixerTracks);
@@ -23,6 +26,7 @@ void SAudioPanelWidget::Construct(const FArguments& InArgs)
 
 	for (int32 TrackIndex = 0; TrackIndex < NumMixerTracks; ++TrackIndex)
 	{
+		// Each track gets a dedicated style instance so per-track visual tweaks remain isolated.
 		FSliderStyle& TrackSliderStyle = TrackSliderStyles[TrackIndex];
 		const FSlateBrush* WhiteBrush = FCoreStyle::Get().GetBrush("WhiteBrush");
 
@@ -37,6 +41,7 @@ void SAudioPanelWidget::Construct(const FArguments& InArgs)
 		TrackSliderStyle.DisabledThumbImage.TintColor = FSlateColor(FLinearColor(0.60f, 0.62f, 0.65f, 1.0f));
 		TrackSliderStyle.BarThickness = 18.0f;
 
+		// Use a fully custom bar/thumb palette to create a high-contrast vertical control.
 		TrackSliderStyle.NormalBarImage = *WhiteBrush;
 		TrackSliderStyle.HoveredBarImage = *WhiteBrush;
 		TrackSliderStyle.DisabledBarImage = *WhiteBrush;
@@ -76,6 +81,7 @@ void SAudioPanelWidget::Construct(const FArguments& InArgs)
 						SNew(SBorder)
 						.Padding(FMargin(1.0f))
 						.BorderImage(FCoreStyle::Get().GetBrush("WhiteBrush"))
+						// Outer stroke indicates the full interactive travel limits of the slider.
 						.BorderBackgroundColor(FLinearColor(0.56f, 0.58f, 0.62f, 1.0f))
 						[
 							SNew(SBorder)
@@ -102,7 +108,13 @@ void SAudioPanelWidget::Construct(const FArguments& InArgs)
 								{
 									if (TrackSliderValues.IsValidIndex(TrackIndex))
 									{
-										TrackSliderValues[TrackIndex] = FMath::Clamp(NewValue, 0.0f, 1.0f);
+										// Clamp defensively in case external code drives this callback.
+										const float ClampedValue = FMath::Clamp(NewValue, 0.0f, 1.0f);
+										TrackSliderValues[TrackIndex] = ClampedValue;
+										if (OnTrackVolumeChanged.IsBound())
+										{
+											OnTrackVolumeChanged.Execute(TrackIndex, ClampedValue);
+										}
 									}
 								})
 							]
@@ -128,6 +140,15 @@ void SAudioPanelWidget::Construct(const FArguments& InArgs)
 					.Padding(0.0f, 0.0f, 0.0f, 4.0f)
 					[
 						SNew(SButton)
+						.OnClicked_Lambda([this, TrackIndex]()
+						{
+							if (OnPlayTrackRequested.IsBound())
+							{
+								OnPlayTrackRequested.Execute(TrackIndex);
+							}
+
+							return FReply::Handled();
+						})
 						.Text(FText::FromString(TEXT("Play")))
 					]
 					+ SVerticalBox::Slot()
@@ -164,6 +185,7 @@ void SAudioPanelWidget::Construct(const FArguments& InArgs)
 
 	ChildSlot
 	[
+		// Two-layer panel framing mirrors the track card treatment for visual consistency.
 		SNew(SBorder)
 		.Padding(FMargin(18.0f))
 		.BorderImage(FCoreStyle::Get().GetBrush("WhiteBrush"))

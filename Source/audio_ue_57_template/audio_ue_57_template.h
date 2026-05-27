@@ -6,3 +6,5 @@
 
 #include "CoreMinimal.h"
 
+// Primary project header for shared module-level includes/types.
+

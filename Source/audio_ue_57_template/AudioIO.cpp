@@ -13,6 +13,7 @@ static Audio::FMixerDevice* AUDIO_MIXER = nullptr;
 
 static void InitializeAudioMixerGlobal()
 {
+	// Cache the current main mixer pointer for this query pass.
 	if (!GEngine)
 	{
 		AUDIO_MIXER = nullptr;
@@ -24,6 +25,7 @@ static void InitializeAudioMixerGlobal()
 
 FString BuildAudioIOReportText()
 {
+	// Build a UI-friendly report string with graceful degradation when optional interfaces are unavailable.
 	FString Report = TEXT("Audio I/O Devices\n");
 
 	InitializeAudioMixerGlobal();
@@ -34,6 +36,7 @@ FString BuildAudioIOReportText()
 		{
 			if (Audio::IAudioPlatformDeviceInfoCache* DeviceInfoCache = MixerPlatform->GetDeviceInfoCache())
 			{
+				// Preferred path: query the platform cache for active output devices.
 				const TArray<Audio::FAudioPlatformDeviceInfo> OutputDevices = DeviceInfoCache->GetAllActiveOutputDevices();
 				for (const Audio::FAudioPlatformDeviceInfo& Device : OutputDevices)
 				{
@@ -49,6 +52,7 @@ FString BuildAudioIOReportText()
 			}
 			else
 			{
+				// Fallback path for platforms that do not expose a device info cache.
 				uint32 NumOutputDevices = 0;
 				if (MixerPlatform->GetNumOutputDevices(NumOutputDevices))
 				{
@@ -108,6 +112,7 @@ FString BuildAudioIOReportText()
 
 void PrintAllAudioInputAndOutputDevices()
 {
+	// Emit the same information to logs for diagnostics and automated capture.
 	InitializeAudioMixerGlobal();
 
 	UE_LOG(LogAudioUE57Template, Display, TEXT("==== Audio Output Devices ===="));
