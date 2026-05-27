@@ -1,4 +1,6 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
+// Copyright vecnode. All Rights Reserved.
+
+// Based on Unreal Engine generated project scaffolding.
 
 #pragma once
 

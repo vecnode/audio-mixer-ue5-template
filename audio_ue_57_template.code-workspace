@@ -41,7 +41,7 @@
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
-				"type": "shell",
+				"type": "process",
 				"options": {
 					"cwd": "C:\\EpicGames\\UE_5.7"
 				}
@@ -61,7 +61,7 @@
 				"dependsOn": [
 					"audio_ue_57_template Win64 Debug Clean"
 				],
-				"type": "shell",
+				"type": "process",
 				"options": {
 					"cwd": "C:\\EpicGames\\UE_5.7"
 				}
@@ -78,7 +78,7 @@
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
-				"type": "shell",
+				"type": "process",
 				"options": {
 					"cwd": "C:\\EpicGames\\UE_5.7"
 				}
@@ -95,7 +95,7 @@
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
-				"type": "shell",
+				"type": "process",
 				"options": {
 					"cwd": "C:\\EpicGames\\UE_5.7"
 				}
@@ -115,7 +115,7 @@
 				"dependsOn": [
 					"audio_ue_57_template Win64 DebugGame Clean"
 				],
-				"type": "shell",
+				"type": "process",
 				"options": {
 					"cwd": "C:\\EpicGames\\UE_5.7"
 				}
@@ -132,7 +132,7 @@
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
-				"type": "shell",
+				"type": "process",
 				"options": {
 					"cwd": "C:\\EpicGames\\UE_5.7"
 				}
@@ -149,7 +149,7 @@
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
-				"type": "shell",
+				"type": "process",
 				"options": {
 					"cwd": "C:\\EpicGames\\UE_5.7"
 				}
@@ -169,7 +169,7 @@
 				"dependsOn": [
 					"audio_ue_57_template Win64 Development Clean"
 				],
-				"type": "shell",
+				"type": "process",
 				"options": {
 					"cwd": "C:\\EpicGames\\UE_5.7"
 				}
@@ -186,7 +186,7 @@
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
-				"type": "shell",
+				"type": "process",
 				"options": {
 					"cwd": "C:\\EpicGames\\UE_5.7"
 				}
@@ -203,7 +203,7 @@
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
-				"type": "shell",
+				"type": "process",
 				"options": {
 					"cwd": "C:\\EpicGames\\UE_5.7"
 				}
@@ -223,7 +223,7 @@
 				"dependsOn": [
 					"audio_ue_57_template Win64 Test Clean"
 				],
-				"type": "shell",
+				"type": "process",
 				"options": {
 					"cwd": "C:\\EpicGames\\UE_5.7"
 				}
@@ -240,7 +240,7 @@
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
-				"type": "shell",
+				"type": "process",
 				"options": {
 					"cwd": "C:\\EpicGames\\UE_5.7"
 				}
@@ -257,7 +257,7 @@
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
-				"type": "shell",
+				"type": "process",
 				"options": {
 					"cwd": "C:\\EpicGames\\UE_5.7"
 				}
@@ -277,7 +277,7 @@
 				"dependsOn": [
 					"audio_ue_57_template Win64 Shipping Clean"
 				],
-				"type": "shell",
+				"type": "process",
 				"options": {
 					"cwd": "C:\\EpicGames\\UE_5.7"
 				}
@@ -294,7 +294,7 @@
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
-				"type": "shell",
+				"type": "process",
 				"options": {
 					"cwd": "C:\\EpicGames\\UE_5.7"
 				}
@@ -311,7 +311,7 @@
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
-				"type": "shell",
+				"type": "process",
 				"options": {
 					"cwd": "C:\\EpicGames\\UE_5.7"
 				}
@@ -331,7 +331,7 @@
 				"dependsOn": [
 					"audio_ue_57_templateEditor Win64 Debug Clean"
 				],
-				"type": "shell",
+				"type": "process",
 				"options": {
 					"cwd": "C:\\EpicGames\\UE_5.7"
 				}
@@ -348,7 +348,7 @@
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
-				"type": "shell",
+				"type": "process",
 				"options": {
 					"cwd": "C:\\EpicGames\\UE_5.7"
 				}
@@ -365,7 +365,7 @@
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
-				"type": "shell",
+				"type": "process",
 				"options": {
 					"cwd": "C:\\EpicGames\\UE_5.7"
 				}
@@ -385,7 +385,7 @@
 				"dependsOn": [
 					"audio_ue_57_templateEditor Win64 DebugGame Clean"
 				],
-				"type": "shell",
+				"type": "process",
 				"options": {
 					"cwd": "C:\\EpicGames\\UE_5.7"
 				}
@@ -402,7 +402,7 @@
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
-				"type": "shell",
+				"type": "process",
 				"options": {
 					"cwd": "C:\\EpicGames\\UE_5.7"
 				}
@@ -419,7 +419,7 @@
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
-				"type": "shell",
+				"type": "process",
 				"options": {
 					"cwd": "C:\\EpicGames\\UE_5.7"
 				}
@@ -439,7 +439,7 @@
 				"dependsOn": [
 					"audio_ue_57_templateEditor Win64 Development Clean"
 				],
-				"type": "shell",
+				"type": "process",
 				"options": {
 					"cwd": "C:\\EpicGames\\UE_5.7"
 				}
@@ -456,7 +456,7 @@
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
-				"type": "shell",
+				"type": "process",
 				"options": {
 					"cwd": "C:\\EpicGames\\UE_5.7"
 				}
@@ -467,6 +467,23 @@
 		"version": "0.2.0",
 		"configurations": [
 			{
+				"name": "Launch audio_ue_57_templateEditor (Development) [Workspace]",
+				"request": "launch",
+				"program": "C:\\EpicGames\\UE_5.7\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+				"preLaunchTask": "audio_ue_57_templateEditor Win64 Development Build",
+				"args": [
+					"${workspaceFolder:audio_ue_57_template}\\audio_ue_57_template.uproject"
+				],
+				"cwd": "C:\\EpicGames\\UE_5.7",
+				"stopAtEntry": false,
+				"console": "internalConsole",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\EpicGames\\UE_5.7\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\EpicGames\\UE_5.7"
+				}
+			},
+			{
 				"name": "Launch audio_ue_57_template (Debug)",
 				"request": "launch",
 				"program": "${workspaceFolder:audio_ue_57_template}\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
@@ -475,7 +492,7 @@
 				],
 				"cwd": "C:\\EpicGames\\UE_5.7",
 				"stopAtEntry": false,
-				"console": "integratedTerminal",
+				"console": "internalConsole",
 				"type": "cppvsdbg",
 				"visualizerFile": "C:\\EpicGames\\UE_5.7\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
 				"sourceFileMap": {
@@ -491,7 +508,7 @@
 				],
 				"cwd": "C:\\EpicGames\\UE_5.7",
 				"stopAtEntry": false,
-				"console": "integratedTerminal",
+				"console": "internalConsole",
 				"type": "cppvsdbg",
 				"visualizerFile": "C:\\EpicGames\\UE_5.7\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
 				"sourceFileMap": {
@@ -507,7 +524,7 @@
 				],
 				"cwd": "C:\\EpicGames\\UE_5.7",
 				"stopAtEntry": false,
-				"console": "integratedTerminal",
+				"console": "internalConsole",
 				"type": "cppvsdbg",
 				"visualizerFile": "C:\\EpicGames\\UE_5.7\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
 				"sourceFileMap": {
@@ -523,7 +540,7 @@
 				],
 				"cwd": "C:\\EpicGames\\UE_5.7",
 				"stopAtEntry": false,
-				"console": "integratedTerminal",
+				"console": "internalConsole",
 				"type": "cppvsdbg",
 				"visualizerFile": "C:\\EpicGames\\UE_5.7\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
 				"sourceFileMap": {
@@ -539,7 +556,7 @@
 				],
 				"cwd": "C:\\EpicGames\\UE_5.7",
 				"stopAtEntry": false,
-				"console": "integratedTerminal",
+				"console": "internalConsole",
 				"type": "cppvsdbg",
 				"visualizerFile": "C:\\EpicGames\\UE_5.7\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
 				"sourceFileMap": {
@@ -556,7 +573,7 @@
 				],
 				"cwd": "C:\\EpicGames\\UE_5.7",
 				"stopAtEntry": false,
-				"console": "integratedTerminal",
+				"console": "internalConsole",
 				"type": "cppvsdbg",
 				"visualizerFile": "C:\\EpicGames\\UE_5.7\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
 				"sourceFileMap": {
@@ -573,24 +590,7 @@
 				],
 				"cwd": "C:\\EpicGames\\UE_5.7",
 				"stopAtEntry": false,
-				"console": "integratedTerminal",
-				"type": "cppvsdbg",
-				"visualizerFile": "C:\\EpicGames\\UE_5.7\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
-				"sourceFileMap": {
-					"D:\\build\\++UE5\\Sync": "C:\\EpicGames\\UE_5.7"
-				}
-			},
-			{
-				"name": "Launch audio_ue_57_templateEditor (Development)",
-				"request": "launch",
-				"program": "C:\\EpicGames\\UE_5.7\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
-				"preLaunchTask": "audio_ue_57_templateEditor Win64 Development Build",
-				"args": [
-					"${workspaceFolder:audio_ue_57_template}\\audio_ue_57_template.uproject"
-				],
-				"cwd": "C:\\EpicGames\\UE_5.7",
-				"stopAtEntry": false,
-				"console": "integratedTerminal",
+				"console": "internalConsole",
 				"type": "cppvsdbg",
 				"visualizerFile": "C:\\EpicGames\\UE_5.7\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
 				"sourceFileMap": {

@@ -1,4 +1,6 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
+// Copyright vecnode. All Rights Reserved.
+
+// Based on Unreal Engine generated project scaffolding.
 
 using UnrealBuildTool;
 
@@ -8,7 +10,19 @@ public class audio_ue_57_template : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput" });
+		PublicDependencyModuleNames.AddRange(new string[]
+		{
+			"Core",
+			"CoreUObject",
+			"Engine",
+			"InputCore",
+			"EnhancedInput",
+			"AudioMixer",
+			"AudioMixerCore",
+			"AudioCaptureCore",
+			"Slate",
+			"SlateCore"
+		});
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 
